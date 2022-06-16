@@ -89,6 +89,7 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
 }
 
 .picture {
@@ -112,8 +113,8 @@ footer {
 #text1,
 #text2 {
   position: absolute;
-  font-family: "Raleway", sans-serif;
-  font-size: 120pt;
+  font-family: "Niconne", sans-serif;
+  font-size: 16vw;
 }
 
 .topnav {
@@ -142,5 +143,5 @@ footer {
 .topCenter {
   position: absolute;
   top: 8px;
-  left: 20%;
+  left: 5%;
 }
