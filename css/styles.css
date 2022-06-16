@@ -1,60 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Niconne');
 @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
-body {
-  margin: 0px;
-}
-
-#container {
-  position: absolute;
-  margin: ;
-  height: 30%;
-  top: 0;
-  bottom: 0;
-  filter: url(#threshold) blur(0.6px);
-  font-family: "Niconne", cursive;
-  color: black;
-  font-size: 45px;
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-.titleX {
-  padding-top: min(50vw, 50px);
-  text-shadow: grey 2px 2px 2px;
-}
-
-#text1,
-#text2 {
-  position: absolute;
-  display: inline-block;
-  font-family: "Raleway", sans-serif;
-  font-size: 80pt;
-  text-align: center;
-  user-select: none;
-}
-
-* {
+html, body {
+  height: 100%;
   margin: 0;
-}
-
-body {
-  font-family: 'Roboto';
   background-color: #ede6db;
-}
-
-ul {
-  list-style: none;
-  display: inline-block;
-  padding: 0;
-  list-style-type: none;
-}
-
-li {
-  float: left;
-  padding: 12.5% 5px;
-  color: #ede6db;
 }
 
 hr {
@@ -69,13 +19,14 @@ hr {
 iframe {
   display: block;
   width: 100%;
+  height: 100%;
 }
 
 footer {
   background-color: #1a3c40;
   display: inline-block;
   width: 100%;
-  min-height: 8%;
+  min-height: 5%;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -86,21 +37,31 @@ footer {
   position: fixed;
   background-color: #1a3c40;
   width: 100%;
-  min-height: 8%;
-  z-index: 0;
+  min-height: 5%;
+  z-index: 1;
 }
 
-.intro {
-  display: inline-block;
-  padding-top: min(50px);
-  height: 20%;
+.dummy {
+  height: 5%;
   width: 100%;
 }
 
-.invite {
+.intro {
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
   display: inline-block;
-  padding-top: min(50px);
-  height: 400px;
+  height: 80%;
+  width: 100%;
+  z-index: 0;
+}
+
+.invite {
+  border-style: solid;
+  border-color: red;
+  background-color: purple;
+  display: inline-block;
+  height: 80%;
   width: 100%;
   background-color: #417d7a;
 }
@@ -109,23 +70,29 @@ footer {
   margin: 16px;
 }
 
-.couplePic {
-  display: block;
+.mapa {
+  border-style: solid;
+  border-color: red;
+  height: 80%;
   width: 100%;
+}
+
+.title {
+  display: inline;
+  max-width: 100%;
+  height: 20%;
+}
+
+.couplePic {
+  max-width: 100%;
   height: auto;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 8px;
-  padding-bottom: 8px;
 }
 
 .picture {
-  max-width: 100%;
-  height: auto;
-}
-
-.mapa {
-  padding-bottom: 6%;
+  position: relative;
 }
 
 .developed {
@@ -135,4 +102,45 @@ footer {
 .approved {
   text-decoration: line-through;
   color: #ede6db;
+}
+
+#container {
+  filter: url(#threshold) blur(0.6px);
+  font-family: "Niconne", cursive;
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-size: 120pt;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1a3c40;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topCenter {
+  position: absolute;
+  top: 8px;
+  left: 20%;
 }
