@@ -46,9 +46,6 @@ footer {
 }
 
 .intro {
-  border-style: solid;
-  border-color: red;
-  border-width: 1px;
   display: inline-block;
   height: auto;
   width: 100%;
@@ -56,9 +53,6 @@ footer {
 }
 
 .invite {
-  border-style: solid;
-  border-color: red;
-  background-color: purple;
   display: inline-block;
   height: auto;
   width: 100%;
@@ -70,8 +64,6 @@ footer {
 }
 
 .mapa {
-  border-style: solid;
-  border-color: red;
   height: 50%;
   width: 100%;
 }
