@@ -94,6 +94,7 @@ footer {
 
 .picture {
   position: relative;
+  overflow: hidden;
 }
 
 .developed {
